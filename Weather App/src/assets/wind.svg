@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="260" height="200" viewBox="0 0 260 200" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Cloud -->
+  <g fill="#BFD8FF">
+    <circle cx="110" cy="80" r="28"/>
+    <circle cx="140" cy="75" r="32"/>
+    <circle cx="170" cy="85" r="26"/>
+    <rect x="95" y="85" width="95" height="30" rx="15"/>
+  </g>
+
+  <!-- Wind Lines -->
+  <g stroke="#5DAEFF" stroke-width="5" fill="none" stroke-linecap="round">
+    <path d="M20 130 Q60 120 100 130 T180 130"/>
+    <path d="M40 155 Q80 145 120 155 T200 155"/>
+    <path d="M70 175 Q110 165 150 175 T230 175"/>
+  </g>
+
+</svg>

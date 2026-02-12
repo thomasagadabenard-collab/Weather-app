@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="240" height="220" viewBox="0 0 240 220" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Sun -->
+  <g stroke="#FDB813" stroke-width="5" stroke-linecap="round">
+    <line x1="60" y1="20" x2="60" y2="40"/>
+    <line x1="40" y1="30" x2="50" y2="45"/>
+    <line x1="80" y1="30" x2="70" y2="45"/>
+  </g>
+  <circle cx="60" cy="60" r="30" fill="#FFD93B" stroke="#FDB813" stroke-width="4"/>
+
+  <!-- Cloud -->
+  <g fill="#4DA6FF">
+    <circle cx="120" cy="110" r="30"/>
+    <circle cx="150" cy="105" r="35"/>
+    <circle cx="180" cy="115" r="28"/>
+    <rect x="105" y="115" width="100" height="35" rx="18"/>
+  </g>
+
+  <!-- Humidity Droplets -->
+  <g fill="#2B8CFF">
+    <path d="M130 165 C130 150, 145 150, 145 165 C145 175, 138 182, 137.5 182 C137 182, 130 175, 130 165 Z"/>
+    <path d="M160 170 C160 155, 175 155, 175 170 C175 180, 168 187, 167.5 187 C167 187, 160 180, 160 170 Z"/>
+  </g>
+
+</svg>

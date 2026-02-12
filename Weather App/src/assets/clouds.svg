@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="240" height="200" viewBox="0 0 240 200" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Sun Rays (behind cloud) -->
+  <g stroke="#FDB813" stroke-width="6" stroke-linecap="round">
+    <line x1="120" y1="20" x2="120" y2="45"/>
+    <line x1="80" y1="35" x2="95" y2="55"/>
+    <line x1="160" y1="35" x2="145" y2="55"/>
+    <line x1="60" y1="70" x2="85" y2="75"/>
+    <line x1="180" y1="70" x2="155" y2="75"/>
+  </g>
+
+  <!-- Sun (partially hidden) -->
+  <circle cx="120" cy="80" r="40" fill="#FFD93B" stroke="#FDB813" stroke-width="5"/>
+
+  <!-- Cloud -->
+  <g fill="#4DA6FF">
+    <circle cx="90" cy="120" r="30"/>
+    <circle cx="120" cy="110" r="35"/>
+    <circle cx="150" cy="120" r="28"/>
+    <rect x="70" y="120" width="100" height="30" rx="15" />
+  </g>
+
+</svg>
