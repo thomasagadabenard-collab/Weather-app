@@ -69,14 +69,13 @@ const Weather = () => {
             setForecast(dailyForecast);
 
             // SAVE RECENT SEARCHES
-            let recent = JSON.parse(localStorage.getItem("recentSearches")) || [];
+            setRecentSearches((prev) => {
+                if (prev.includes(city)) return prev;
 
-            if (!recent.includes(city)) {
-                recent.unshift(city);
-                recent = recent.slice(0, 5);
-                localStorage.setItem("recentSearches", JSON.stringify(recent));
-                setRecentSearches(recent);
-            }
+                const updated = [city, ...prev].slice(0, 5);
+                return updated;
+            });
+
 
         } catch (error) {
             setWeatherData(null);
@@ -84,11 +83,12 @@ const Weather = () => {
         }
     };
 
-    // Load default city + recent searches
+    
     useEffect(() => {
-        search("London");
-        
-    }, []);
+        search("London" );
+        const saved = JSON.parse(localStorage.getItem("recentSearches")) || [];
+        setRecentSearches(saved);
+    }, [unit]);
 
     return (
         <div className='weather'>
