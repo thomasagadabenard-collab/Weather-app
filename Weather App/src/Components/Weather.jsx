@@ -109,14 +109,6 @@ const Weather = () => {
                 <button onClick={() => setUnit("imperial")}>°F</button>
             </div>
 
-            {/* RECENT SEARCHES */}
-            <div className="recent">
-                {recentSearches.map((city, index) => (
-                    <p key={index} onClick={() => search(city)}>
-                        {city}
-                    </p>
-                ))}
-            </div>
 
             {/*WEATHER DISPLAY */}
             {weatherData && (
@@ -147,11 +139,21 @@ const Weather = () => {
                 </>
             )}
 
+            {/* RECENT SEARCHES */}
+            <div className="recent">
+                <h3 className='search'>Search History</h3>
+                {recentSearches.map((city, index) => (
+                    <p key={index} onClick={() => search(city)}>
+                        {city}
+                    </p>
+                ))}
+            </div>
+
             {/* 5 DAY FORECAST */}
             <div className="forecast">
                 {forecast.map((day, index) => (
                     <div key={index} className="forecast-day">
-                        <p>{new Date(day.dt_txt).toLocaleDateString()}</p>
+                        <p>{new Date(day.dt_txt).toLocaleDateString()}</p> 
                         <p>{Math.floor(day.main.temp)}°</p>
                     </div>
                 ))}

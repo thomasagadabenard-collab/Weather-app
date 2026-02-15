@@ -88,7 +88,7 @@
 .unit-toggle button{
     padding: 4px 12px;
     width: 50px;
-    background: white;
+    background: #ebfffc;
     border: none;
     border-radius: 5px;
     transition: all ease-in-out 0.4s;
@@ -104,4 +104,29 @@
     margin: 20px 0;
     font-weight: bold;
     color: #fff;
+
+
+}
+
+.recent{
+    color: white;
+    border: white 1px solid;
+    padding: 30px;
+    margin-top: 30px;
+    text-align: center;
+    transform: rotate(10deg);
+    transition: all ease-in-out 0.15s;
+    box-shadow: 3px 3px 5px #ebfffc, -3px -3px 5px white;
+}
+
+.recent:hover{
+    transform: rotate(0);
+}
+
+.recent > *:hover{
+    cursor: pointer;
+}
+
+.search{
+    text-decoration: underline;
 }
