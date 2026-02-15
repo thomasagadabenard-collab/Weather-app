@@ -74,3 +74,16 @@
     display: block;
     font-size: 16px;
 }
+
+.unit-toggle button{
+    padding: 4px 12px;
+    width: 50px;
+}
+
+.forecast-day{
+    display: flex;
+    gap: 18px;
+    margin: 20px 0;
+    font-weight: bold;
+    color: #fff;
+}
